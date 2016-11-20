@@ -294,7 +294,9 @@ List<Integer> transactionsIds =
 \end{lstlisting}
 \end{figure}
 
-Figure 21.1 illustrates the Java SE 8 code. First, we obtain a stream from the list of transactions (the data) using the stream() method available on List. Next, several operations (filter, sorted, map, collect) are chained together to form a pipeline, which can be seen as forming a query on the data.
+Figure 21.1 illustrates the Java SE 8 code. First, we obtain a stream from the list of transactions (the data) using the stream() method available on List. Next, several operations (filter, sorted, map, collect) are chained together to form a pipeline, which can be seen as forming a query on the data. Stream operations return streams themselves
+
+To parallelize the code, we can use parallelStream() instead of Stream()
 
 
 
